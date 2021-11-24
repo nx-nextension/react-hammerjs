@@ -1,10 +1,8 @@
-React-HammerJS
-==============
+# React-HammerJS
 
 [ReactJS](http://facebook.github.io/react/) / [HammerJS](http://hammerjs.github.io) integration. Support touch events in your React app.
 
 If you're looking for native tap event handling in ReactJS, check out my [react-tappable](https://github.com/JedWatson/react-tappable) package.
-
 
 ## Installation
 
@@ -16,7 +14,6 @@ You can also use the standalone build by including `dist/hammer.js` in your page
 npm install react-hammerjs --save
 ```
 
-
 ## Usage
 
 React-HammerJS wraps a React component, binding Hammer events to it so it can fire the handlers specified.
@@ -24,32 +21,38 @@ React-HammerJS wraps a React component, binding Hammer events to it so it can fi
 ## Properties
 
 ### Event Listener properties
-* `onTap`
-* `onDoubleTap`
-* `onPan`
-* `onPanCancel`
-* `onPanEnd`
-* `onPanStart`
-* `onPinch`
-* `onPinchCancel`
-* `onPinchEnd`
-* `onPinchIn`
-* `onPinchOut`
-* `onPinchStart`
-* `onPress`
-* `onPressUp`
-* `onRotate`
-* `onRotateCancel`
-* `onRotateEnd`
-* `onRotateMove`
-* `onRotateStart`
-* `onSwipe`
-* `action` - like the `onTap` event handler but will also be fired `onPress`.
+
+- `onTap`
+- `onDoubleTap`
+- `onPan`
+- `onPanCancel`
+- `onPanEnd`
+- `onPanStart`
+- `onPinch`
+- `onPinchCancel`
+- `onPinchEnd`
+- `onPinchIn`
+- `onPinchOut`
+- `onPinchStart`
+- `onPress`
+- `onPressUp`
+- `onRotate`
+- `onRotateCancel`
+- `onRotateEnd`
+- `onRotateMove`
+- `onRotateStart`
+- `onSwipe`
+- `onSwipeRight`
+- `onSwipeLeft`
+- `onSwipeUp`
+- `onSwipeDown`
+- `action` - like the `onTap` event handler but will also be fired `onPress`.
 
 ### Behavior properties
-* `direction` - (string) `'DIRECTION_ALL'` | `'DIRECTION_HORIZONTAL'` | `'DIRECTION_VERTICAL'`.  Used to restrict the `pan` and `swipe` direction. These string values may also work: `'DIRECTION_NONE'` |`'DIRECTION_LEFT'` | `'DIRECTION_RIGHT'` | `'DIRECTION_UP'` | `'DIRECTION_DOWN'`.
 
-* `options` - can be used to configure the Hammer manager. These properties will be merged with the default ones.
+- `direction` - (string) `'DIRECTION_ALL'` | `'DIRECTION_HORIZONTAL'` | `'DIRECTION_VERTICAL'`. Used to restrict the `pan` and `swipe` direction. These string values may also work: `'DIRECTION_NONE'` |`'DIRECTION_LEFT'` | `'DIRECTION_RIGHT'` | `'DIRECTION_UP'` | `'DIRECTION_DOWN'`.
+
+- `options` - can be used to configure the Hammer manager. These properties will be merged with the default ones.
 
 ### Example
 
@@ -92,6 +95,7 @@ For example, to activate the `pinch` event on a `canvas` element:
 ```
 
 Disabled events are detailed in the hammer.js api documentation:
+
 - http://hammerjs.github.io/recognizer-rotate/
 - http://hammerjs.github.io/recognizer-pinch/
 
